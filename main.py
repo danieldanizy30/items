@@ -21,13 +21,15 @@ print("your items have been stored ")
 print(items.read())
 items.close()
 
-#response = input("do you want to replace any item? ")
-#if response == "Yes":
-   # print("hello")
-#else:
-   # if response == "No":
-      #  return None
-
+response = True
+while response:
+    response = input("do you want to replace any item? ")
+    if response.lower() == "yes":
+        break
+    else:
+        print("good bye")
+    sys.exit()
+response = False
 
 print("item1 \n" "item2 \n" "item3 \n")
 
